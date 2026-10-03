@@ -59,7 +59,7 @@ Das gilt für den Ländervergleich insgesamt. Die Häufigkeitszahlen veränderte
 
 Die Polizeiliche Kriminalstatistik zählt nur, was der Polizei bekannt wird. Das Dunkelfeld bei Cybercrime wird nach Angaben des BKA in Studien auf bis zu 91,5 % geschätzt. Das BKA schreibt deshalb, die PKS habe nur eine begrenzte Aussagekraft für die tatsächlich verübten Cyber-Straftaten und eigne sich vor allem für Aussagen zum Trend ([Bundeslagebild Cybercrime 2022](https://www.bka.de/SharedDocs/Downloads/DE/Publikationen/JahresberichteUndLagebilder/Cybercrime/cybercrimeBundeslagebild2022.pdf?__blob=publicationFile&v=4), Seite 4).
 
-Die Zahlen sind außerdem enger gefasst, als das Wort „Cybercrime“ vermuten lässt. Seit 2014 wird ein Fall nur gezählt, wenn konkrete Anhaltspunkte für eine Tathandlung in Deutschland vorliegen. Straftaten mit dem Tatmittel Internet weist das BKA in einer eigenen Tabelle aus, sie sind hier nicht enthalten.
+Die Zahlen sind außerdem enger gefasst, als das Wort „Cybercrime“ vermuten lässt. Seit 2014 wird ein Fall nur gezählt, wenn konkrete Anhaltspunkte für eine Tathandlung in Deutschland vorliegen. Straftaten mit dem Tatmittel Internet weist das BKA in einer eigenen Tabelle aus, die hier nicht ausgewertet wird.
 
 Drei technische Punkte begrenzen die Genauigkeit. Die Aufklärungsquoten vor 2019 sind Näherungen, weil das BKA sie nur mit einer Nachkommastelle veröffentlicht hat und ich die aufgeklärten Fälle daraus zurückgerechnet habe. Die Häufigkeitszahlen beruhen für 2016 auf dem Zensus 2011 und für 2025 auf dem Zensus 2022, was das BKA als nur eingeschränkt vergleichbar bezeichnet. Und der Ländervergleich hat zwei Zeitpunkte, 2016 und 2025, nicht die Jahre dazwischen.
 

@@ -57,7 +57,7 @@ This applies to the state comparison as a whole. The rates changed between −74
 
 The Police Crime Statistics count only what becomes known to the police. According to the BKA, studies estimate the unreported share of cybercrime at up to 91.5 %. The BKA therefore writes that the PKS has only limited informative value for the cyber offences actually committed and is suited mainly for statements on the trend ([Bundeslagebild Cybercrime 2022](https://www.bka.de/SharedDocs/Downloads/DE/Publikationen/JahresberichteUndLagebilder/Cybercrime/cybercrimeBundeslagebild2022.pdf?__blob=publicationFile&v=4), page 4).
 
-The figures are also narrower than the word "cybercrime" suggests. Since 2014 a case is only counted when there are concrete indications that the act was carried out in Germany. Offences committed with the internet as a tool are published by the BKA in a separate table and are not included here.
+The figures are also narrower than the word "cybercrime" suggests. Since 2014 a case is only counted when there are concrete indications that the act was carried out in Germany. Offences committed with the internet as a tool are published by the BKA in a separate table, which is not analysed here.
 
 Three technical points limit the precision. The clearance rates before 2019 are approximations, because the BKA published them with only one decimal place and I calculated the cleared cases back from them. The rates per 100,000 inhabitants are based on the census of 2011 for 2016 and on the census of 2022 for 2025, which the BKA describes as comparable only to a limited extent. And the state comparison has two points in time, 2016 and 2025, not the years in between.
 
