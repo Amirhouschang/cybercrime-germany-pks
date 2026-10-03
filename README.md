@@ -74,7 +74,7 @@ Three technical points limit the precision. The clearance rates before 2019 are 
 └── figures/                             The three charts as PNG
 ```
 
-The notebook reads the three Excel files in `data/raw`, checks them, calculates the results and writes two small tables to `data/clean` and the charts to `figures`. The dashboard runs online at https://cybercrime-germany-pks.streamlit.app/. To start it locally, it reads the two tables:
+The notebook reads the three Excel files in `data/raw`, checks them, calculates the results and writes two small tables to `data/clean` and the charts to `figures`. The dashboard runs online at https://cybercrime-germany-pks.streamlit.app/ and reads these two tables. To start it locally:
 
 ```bash
 pip install -r requirements.txt

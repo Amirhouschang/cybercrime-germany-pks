@@ -76,7 +76,7 @@ Drei technische Punkte begrenzen die Genauigkeit. Die Aufklärungsquoten vor 201
 └── figures/                             Die drei Diagramme als PNG
 ```
 
-Das Notebook liest die drei Excel-Dateien in `data/raw`, prüft sie, berechnet die Ergebnisse und schreibt zwei kleine Tabellen nach `data/clean` sowie die Diagramme nach `figures`. Das Dashboard läuft online unter https://cybercrime-germany-pks.streamlit.app/. Für den lokalen Start liest es diese beiden Tabellen:
+Das Notebook liest die drei Excel-Dateien in `data/raw`, prüft sie, berechnet die Ergebnisse und schreibt zwei kleine Tabellen nach `data/clean` sowie die Diagramme nach `figures`. Das Dashboard läuft online unter https://cybercrime-germany-pks.streamlit.app/ und liest diese beiden Tabellen. Lokal starten:
 
 ```bash
 pip install -r requirements.txt
