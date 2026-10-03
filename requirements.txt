@@ -1,0 +1,9 @@
+# Dashboard (app.py)
+streamlit>=1.65
+pandas>=2.0
+plotly>=5.20
+
+# Notebook
+matplotlib>=3.8
+openpyxl>=3.1
+jupyter
