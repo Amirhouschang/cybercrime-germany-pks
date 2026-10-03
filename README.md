@@ -8,7 +8,7 @@ This project looks at how cybercrime recorded by the German police has developed
 
 The analysis answers three questions. How did the number of cases develop? How many of these cases does the police clear, compared with crime in general? And how much do the 16 federal states differ from each other?
 
-The full analysis is in the notebook [`cybercrime_germany_pks.ipynb`](notebooks/cybercrime_germany_pks.ipynb). There is also an interactive dashboard in English and German (`app.py`).
+The full analysis is in the notebook [`cybercrime_germany_pks.ipynb`](notebooks/cybercrime_germany_pks.ipynb). There is also an interactive [dashboard](https://cybercrime-germany-pks.streamlit.app/) in English and German.
 
 ## What counts as cybercrime here
 
@@ -74,7 +74,7 @@ Three technical points limit the precision. The clearance rates before 2019 are 
 └── figures/                             The three charts as PNG
 ```
 
-The notebook reads the three Excel files in `data/raw`, checks them, calculates the results and writes two small tables to `data/clean` and the charts to `figures`. The dashboard reads the two tables:
+The notebook reads the three Excel files in `data/raw`, checks them, calculates the results and writes two small tables to `data/clean` and the charts to `figures`. The dashboard runs online at https://cybercrime-germany-pks.streamlit.app/. To start it locally, it reads the two tables:
 
 ```bash
 pip install -r requirements.txt

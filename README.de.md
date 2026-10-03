@@ -8,7 +8,7 @@ Dieses Projekt untersucht, wie sich die von der Polizei erfasste Cybercrime in D
 
 Die Analyse beantwortet drei Fragen. Wie haben sich die Fallzahlen entwickelt? Wie viele dieser Fälle klärt die Polizei auf, verglichen mit der Kriminalität insgesamt? Und wie stark unterscheiden sich die 16 Bundesländer?
 
-Die vollständige Analyse steht im Notebook [`cybercrime_germany_pks.ipynb`](notebooks/cybercrime_germany_pks.ipynb), das auf Englisch geschrieben ist. Dazu gibt es ein interaktives Dashboard auf Deutsch und Englisch (`app.py`).
+Die vollständige Analyse steht im Notebook [`cybercrime_germany_pks.ipynb`](notebooks/cybercrime_germany_pks.ipynb), das auf Englisch geschrieben ist. Dazu gibt es ein interaktives [Dashboard](https://cybercrime-germany-pks.streamlit.app/) auf Deutsch und Englisch.
 
 ## Was hier als Cybercrime zählt
 
@@ -76,7 +76,7 @@ Drei technische Punkte begrenzen die Genauigkeit. Die Aufklärungsquoten vor 201
 └── figures/                             Die drei Diagramme als PNG
 ```
 
-Das Notebook liest die drei Excel-Dateien in `data/raw`, prüft sie, berechnet die Ergebnisse und schreibt zwei kleine Tabellen nach `data/clean` sowie die Diagramme nach `figures`. Das Dashboard liest diese beiden Tabellen:
+Das Notebook liest die drei Excel-Dateien in `data/raw`, prüft sie, berechnet die Ergebnisse und schreibt zwei kleine Tabellen nach `data/clean` sowie die Diagramme nach `figures`. Das Dashboard läuft online unter https://cybercrime-germany-pks.streamlit.app/. Für den lokalen Start liest es diese beiden Tabellen:
 
 ```bash
 pip install -r requirements.txt
