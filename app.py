@@ -193,6 +193,8 @@ TEXT = {
         "download_states": "State table (CSV)",
         "chart_source": "Source: BKA, Police Crime Statistics. Own calculation.",
         "missing": "Data files not found in `data/clean`. Run the notebook first.",
+        "footer": ("© 2026 Amirhoushang Rahmannejad. All rights reserved. "
+                   "Data: Federal Criminal Police Office (BKA), Police Crime Statistics."),
     },
     "de": {
         "title": "Cybercrime in Deutschland",
@@ -365,6 +367,8 @@ TEXT = {
         "download_states": "Tabelle Länder (CSV)",
         "chart_source": "Quelle: BKA, Polizeiliche Kriminalstatistik. Eigene Berechnung.",
         "missing": "Datendateien in `data/clean` nicht gefunden. Bitte zuerst das Notebook ausführen.",
+        "footer": ("© 2026 Amirhoushang Rahmannejad. Alle Rechte vorbehalten. "
+                   "Daten: Bundeskriminalamt (BKA), Polizeiliche Kriminalstatistik."),
     },
 }
 
@@ -654,3 +658,7 @@ with tab_sources:
     d1, d2 = st.columns(2)
     d1.download_button(T["download_federal"], federal.to_csv().encode("utf-8"), "cybercrime_federal.csv", "text/csv")
     d2.download_button(T["download_states"], states.to_csv().encode("utf-8"), "cybercrime_states.csv", "text/csv")
+
+# Footer below all tabs: copyright and data attribution
+st.divider()
+st.caption(T["footer"])
