@@ -604,10 +604,12 @@ with tab_states:
             fig.add_trace(go.Bar(
                 x=wide[group], y=wide.index, orientation="h", name=T["groups"][group],
                 marker=dict(color=color, line=dict(color="rgba(255,255,255,0.9)", width=1)),
-                hovertemplate="%{y}, " + T["groups"][group] + ": %{x:,.0f}<extra></extra>"))
+                hovertemplate="%{x:,.1f}"))
         base_layout(fig, T["groups_title"].format(year=year), x_title=T["groups_axis"], height=600)
         # Two legend rows need more room above the plot than the other charts
+        # One hover box per state that lists all six groups
         fig.update_layout(barmode="stack", legend=dict(traceorder="normal"), margin=dict(t=120),
+                          hovermode="y unified", yaxis=dict(showspikes=False),
                           title=dict(y=0.97, yanchor="top"))
         show(fig)
         st.markdown(T["groups_note"])
