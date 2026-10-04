@@ -49,6 +49,12 @@ The drop came in one step between 2018 and 2019, and the rate has stayed at arou
 
 The differences are very large. In 2025 Bremen recorded 563 cases per 100,000 inhabitants and Mecklenburg-Western Pomerania 39, a factor of 14.5. The three city states Berlin, Bremen and Hamburg hold the first three ranks in 2016 and in 2025, so their high level is not the outlier of a single year. Below them the ranking is unstable: the rate roughly doubled in Bremen and fell by three quarters in Mecklenburg-Western Pomerania.
 
+The states with the most cases also clear the fewest. The three states with the highest rates have the three lowest clearance rates in 2025: Hamburg 9.2 %, Bremen 13.1 % and Berlin 20.9 %. The rate is highest in Brandenburg at 59.0 %.
+
+![Cybercrime per 100,000 inhabitants by offence group and federal state, 2025](figures/04_offence_groups.png)
+
+The breakdown by offence group shows where the differences come from. Computer fraud itself consists of several offence keys that name the means used: goods ordered on credit, stolen payment cards, stolen card data and other non-cash means of payment. The states differ mainly in these groups. The three cybercrime offences outside computer fraud range from 9 to 47 cases per 100,000 inhabitants in 2025, depending on the state, while cases with card data range from 3.5 to 145 and cases with other non-cash means of payment from 1 to 257. Each city state has a different main group: payment cards with PIN in Berlin, card data in Hamburg, other non-cash means of payment in Bremen. The national rise since 2016 also comes from two groups, card data (from 12.1 to 31.5 per 100,000 inhabitants) and other non-cash means of payment (from 2.3 to 15.1). The four other groups fell.
+
 Bremen stands out even among the city states, and I looked into why. Almost half of its value comes from a single offence key, computer fraud with unlawfully obtained non-cash means of payment other than payment cards (key 516920). Bremen recorded 257 such cases per 100,000 inhabitants in 2025, 17 times the national rate, while Berlin and Hamburg are at 11. Without this one key Bremen would be below both. Why this key is so high in Bremen in particular does not follow from the published tables. The rise is not new, however: for 2022 the [Weser-Kurier](https://www.weser-kurier.de/bremen/politik/bremer-kriminalstatistik-immer-mehr-digitale-straftaten-doc7p7nodmh7tg1b8franvb) (6 March 2023) reported that computer fraud with stolen non-cash means of payment in Bremen had more than doubled within one year, from 968 to 2,136 cases. According to the report, the Bremen State Criminal Police Office sees this rise favoured by the growing use of electronic payment methods such as Apple Pay and Google Pay.
 
 This applies to the state comparison as a whole. The rates changed between −74 % and +103 % from 2016 to 2025. The tables do not show where these differences come from, and the BKA notes on the PKS 2025 list no special circumstance for any state in this field. In general the BKA points out that high rates of increase are partly due to investigation complexes with numerous individual cases. Whether this applies to a particular state does not follow from the tables.
@@ -71,10 +77,10 @@ Three technical points limit the precision. The clearance rates before 2019 are 
 ├── data/
 │   ├── raw/                             Original BKA tables and notes
 │   └── clean/                           Result tables used by the dashboard
-└── figures/                             The three charts as PNG
+└── figures/                             The four charts as PNG
 ```
 
-The notebook reads the three Excel files in `data/raw`, checks them, calculates the results and writes two small tables to `data/clean` and the charts to `figures`. The dashboard runs online at https://cybercrime-germany-pks.streamlit.app/ and reads these two tables. To start it locally:
+The notebook reads the three Excel files in `data/raw`, checks them, calculates the results and writes three small tables to `data/clean` and the charts to `figures`. The dashboard runs online at https://cybercrime-germany-pks.streamlit.app/ and reads these tables. To start it locally:
 
 ```bash
 pip install -r requirements.txt

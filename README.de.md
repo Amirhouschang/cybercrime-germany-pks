@@ -51,6 +51,12 @@ Der Rückgang geschah in einem Schritt zwischen 2018 und 2019, seitdem liegt die
 
 Die Unterschiede sind sehr groß. 2025 erfasste Bremen 563 Fälle je 100.000 Einwohner, Mecklenburg-Vorpommern 39. Das ist der Faktor 14,5. Die drei Stadtstaaten Berlin, Bremen und Hamburg belegen 2016 und 2025 die ersten drei Plätze, ihr hohes Niveau ist also kein Ausreißer eines einzelnen Jahres. Dahinter ist die Rangfolge nicht stabil: In Bremen hat sich die Häufigkeitszahl etwa verdoppelt, in Mecklenburg-Vorpommern ist sie um drei Viertel gesunken.
 
+Die Länder mit den meisten Fällen klären auch am wenigsten auf. Die drei Länder mit den höchsten Häufigkeitszahlen haben 2025 die drei niedrigsten Aufklärungsquoten: Hamburg 9,2 %, Bremen 13,1 % und Berlin 20,9 %. Am höchsten ist die Quote in Brandenburg mit 59,0 %.
+
+![Cybercrime je 100.000 Einwohner nach Deliktgruppe und Bundesland, 2025](figures/04_offence_groups.png)
+
+Woher die Unterschiede kommen, zeigt die Aufschlüsselung nach Deliktgruppen. Computerbetrug besteht selbst aus mehreren Straftatenschlüsseln, die das Tatmittel benennen: Waren auf Kredit, gestohlene Zahlungskarten, gestohlene Kartendaten und sonstige unbare Zahlungsmittel. Die Länder unterscheiden sich vor allem bei diesen Gruppen. Die drei Cybercrime-Delikte außerhalb des Computerbetrugs liegen 2025 je nach Land zwischen 9 und 47 Fällen je 100.000 Einwohner, die Fälle mit Kartendaten dagegen zwischen 3,5 und 145 und die mit sonstigen unbaren Zahlungsmitteln zwischen 1 und 257. Jeder Stadtstaat hat dabei eine andere Hauptgruppe: Berlin die Zahlungskarten mit PIN, Hamburg die Kartendaten, Bremen die sonstigen unbaren Zahlungsmittel. Auch der bundesweite Anstieg seit 2016 kommt aus zwei Gruppen, den Kartendaten (von 12,1 auf 31,5 je 100.000 Einwohner) und den sonstigen unbaren Zahlungsmitteln (von 2,3 auf 15,1). Die anderen vier Gruppen sind zurückgegangen.
+
 Bremen fällt selbst unter den Stadtstaaten auf, und ich bin dem nachgegangen. Fast die Hälfte des Bremer Werts kommt aus einem einzigen Straftatenschlüssel, dem Computerbetrug mittels rechtswidrig erlangter sonstiger unbarer Zahlungsmittel (Schlüssel 516920). Bremen erfasste 2025 davon 257 Fälle je 100.000 Einwohner, das 17-Fache des Bundeswerts, während Berlin und Hamburg bei 11 liegen. Ohne diesen einen Schlüssel läge Bremen hinter beiden. Warum dieser Schlüssel gerade in Bremen so hoch ist, geht aus den veröffentlichten Tabellen nicht hervor. Der Anstieg ist allerdings nicht neu: Schon für 2022 berichtete der [Weser-Kurier](https://www.weser-kurier.de/bremen/politik/bremer-kriminalstatistik-immer-mehr-digitale-straftaten-doc7p7nodmh7tg1b8franvb) (6. März 2023), der Computerbetrug mit gestohlenen unbaren Zahlungsmitteln habe sich in Bremen binnen eines Jahres mehr als verdoppelt, von 968 auf 2.136 Fälle. Nach dem Bericht sieht das Bremer Landeskriminalamt diesen Anstieg begünstigt durch die zunehmende Verbreitung elektronischer Zahlungsmethoden wie Apple Pay und Google Pay.
 
 Das gilt für den Ländervergleich insgesamt. Die Häufigkeitszahlen veränderten sich von 2016 bis 2025 zwischen −74 % und +103 %. Woher diese Unterschiede kommen, zeigen die Tabellen nicht, und die Hinweise des BKA zur PKS 2025 nennen für kein Land eine Besonderheit in diesem Bereich. Allgemein weist das BKA darauf hin, dass hohe Steigerungsraten zum Teil auf Ermittlungskomplexe mit zahlreichen Einzelfällen zurückgehen. Ob das für ein bestimmtes Land gilt, geht aus den Tabellen nicht hervor.
@@ -73,10 +79,10 @@ Drei technische Punkte begrenzen die Genauigkeit. Die Aufklärungsquoten vor 201
 ├── data/
 │   ├── raw/                             Originaltabellen und Hinweise des BKA
 │   └── clean/                           Ergebnistabellen für das Dashboard
-└── figures/                             Die drei Diagramme als PNG
+└── figures/                             Die vier Diagramme als PNG
 ```
 
-Das Notebook liest die drei Excel-Dateien in `data/raw`, prüft sie, berechnet die Ergebnisse und schreibt zwei kleine Tabellen nach `data/clean` sowie die Diagramme nach `figures`. Das Dashboard läuft online unter https://cybercrime-germany-pks.streamlit.app/ und liest diese beiden Tabellen. Lokal starten:
+Das Notebook liest die drei Excel-Dateien in `data/raw`, prüft sie, berechnet die Ergebnisse und schreibt drei kleine Tabellen nach `data/clean` sowie die Diagramme nach `figures`. Das Dashboard läuft online unter https://cybercrime-germany-pks.streamlit.app/ und liest diese Tabellen. Lokal starten:
 
 ```bash
 pip install -r requirements.txt

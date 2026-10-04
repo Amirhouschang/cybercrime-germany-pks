@@ -85,7 +85,9 @@ TEXT = {
         "states_title": "{measure} by federal state",
         "states_finding": ("In 2025 **{high}** recorded **{high_value}** cybercrime cases per 100,000 inhabitants and "
                            "**{low}** **{low_value}**, a factor of **{factor}**. Berlin, Bremen and Hamburg hold "
-                           "ranks 1 to 3 in both 2016 and 2025. The rate rose in {up} states and fell in {down}."),
+                           "ranks 1 to 3 in both 2016 and 2025. The rate rose in {up} states and fell in {down}.\n\n"
+                           "The three states with the highest rates have the three lowest clearance rates in 2025: "
+                           "{low_clear}. The rate is highest in {top_clear_state} at {top_clear} %."),
         "states_warning": ("The tables do not show why the states differ this much, and the BKA notes on the PKS 2025 "
                            "list no special circumstance for any state in this field. In general the BKA points "
                            "out that high rates of increase are partly due to investigation complexes with "
@@ -157,6 +159,19 @@ TEXT = {
                     "Offences with damage in Germany and an offender abroad or at an unknown location rose by "
                     "more than 8 % in 2022, while the cases recorded in Germany fell by 6.5 % (page 6). Those "
                     "offences are not part of these figures."),
+        "groups_title": "Cybercrime per 100,000 inhabitants by offence group, {year}",
+        "groups_axis": "Recorded cases per 100,000 inhabitants",
+        "groups_year": "Year",
+        "groups_note": ("The differences between the states come mainly from fraud with means of payment and goods "
+                        "ordered on credit. The three cybercrime offences outside computer fraud range from 9 to 47 "
+                        "cases per 100,000 inhabitants in 2025, payment card data from 3.5 to 145 and other non-cash "
+                        "means of payment from 1 to 257. The breakdown shows where the differences are, not why "
+                        "they exist."),
+        "groups": {"Goods credit fraud": "Goods credit fraud", "Payment cards with PIN": "Payment cards with PIN",
+                   "Payment card data": "Payment card data",
+                   "Other non-cash means of payment": "Other non-cash means of payment",
+                   "Other computer fraud": "Other computer fraud",
+                   "Other cybercrime offences": "Other cybercrime offences"},
         "bremen_h": "Why is Bremen so high?",
         "bremen": ("Bremen stands out even among the three city states. Almost half of its value comes from one "
                    "offence key: computer fraud with unlawfully obtained other non-cash means of payment "
@@ -238,7 +253,10 @@ TEXT = {
         "states_finding": ("2025 erfasste **{high}** **{high_value}** Cybercrime-Fälle je 100.000 Einwohner, "
                            "**{low}** **{low_value}**. Das ist der Faktor **{factor}**. Berlin, Bremen und Hamburg "
                            "belegen 2016 und 2025 die Plätze 1 bis 3. Die Häufigkeitszahl stieg in {up} Ländern "
-                           "und sank in {down}."),
+                           "und sank in {down}.\n\n"
+                           "Die drei Länder mit den höchsten Häufigkeitszahlen haben 2025 die drei niedrigsten "
+                           "Aufklärungsquoten: {low_clear}. Am höchsten ist die Quote in {top_clear_state} mit "
+                           "{top_clear} %."),
         "states_warning": ("Die Tabellen zeigen nicht, warum sich die Länder so stark unterscheiden, und die Hinweise "
                            "des BKA zur PKS 2025 nennen für kein Land eine Besonderheit in diesem Bereich. "
                            "Allgemein weist das BKA darauf hin, dass hohe Steigerungsraten zum Teil auf "
@@ -311,6 +329,19 @@ TEXT = {
                     "Deutschland und Täter im Ausland oder an unbekanntem Ort nahmen 2022 um über 8 % zu, während "
                     "die in Deutschland erfassten Fälle um 6,5 % sanken (Seite 6). Diese Taten sind in den Zahlen "
                     "hier nicht enthalten."),
+        "groups_title": "Cybercrime je 100.000 Einwohner nach Deliktgruppe, {year}",
+        "groups_axis": "Erfasste Fälle je 100.000 Einwohner",
+        "groups_year": "Jahr",
+        "groups_note": ("Die Unterschiede zwischen den Ländern kommen vor allem aus dem Betrug mit Zahlungsmitteln "
+                        "und mit Waren auf Kredit. Die drei Cybercrime-Delikte außerhalb des Computerbetrugs liegen "
+                        "2025 zwischen 9 und 47 Fällen je 100.000 Einwohner, die Fälle mit Kartendaten zwischen 3,5 "
+                        "und 145 und die mit sonstigen unbaren Zahlungsmitteln zwischen 1 und 257. Die "
+                        "Aufschlüsselung zeigt, wo die Unterschiede liegen, nicht warum es sie gibt."),
+        "groups": {"Goods credit fraud": "Warenkreditbetrug", "Payment cards with PIN": "Zahlungskarten mit PIN",
+                   "Payment card data": "Daten von Zahlungskarten",
+                   "Other non-cash means of payment": "Sonstige unbare Zahlungsmittel",
+                   "Other computer fraud": "Sonstiger Computerbetrug",
+                   "Other cybercrime offences": "Übrige Cybercrime-Delikte"},
         "bremen_h": "Warum liegt Bremen so hoch?",
         "bremen": ("Bremen fällt selbst unter den drei Stadtstaaten auf. Fast die Hälfte des Bremer Werts kommt "
                    "aus einem einzigen Straftatenschlüssel: Computerbetrug mittels rechtswidrig erlangter "
@@ -391,6 +422,9 @@ BLUE = "#3987e5" if DARK else "#2a78d6"        # cybercrime, 2025
 ORANGE = "#d95926" if DARK else "#eb6834"      # all recorded crime
 BLUE_SOFT = "#1f4f8a" if DARK else "#a9c9f0"   # 2016, lighter shade of the same hue
 GREY = "#6b6b68" if DARK else "#c9c8c2"        # states that are not highlighted
+# Six offence groups, fixed order (light and dark theme)
+GROUP_COLORS = (["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#9085e9"] if DARK
+                else ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#4a3aa7"])
 
 if not (DATA_CLEAN / "cybercrime_federal.csv").exists():
     st.error(T["missing"])
@@ -547,8 +581,36 @@ with tab_states:
         high=top_state, high_value=fmt(states.loc[top_state, "rate_2025"]),
         low=bottom_state, low_value=fmt(states.loc[bottom_state, "rate_2025"]),
         factor=fmt(states["rate_2025"].max() / states["rate_2025"].min(), 1),
-        up=int((states["rate_change_pct"] > 0).sum()), down=int((states["rate_change_pct"] < 0).sum())))
+        up=int((states["rate_change_pct"] > 0).sum()), down=int((states["rate_change_pct"] < 0).sum()),
+        low_clear=", ".join(f"{name} {fmt(value, 1)} %" for name, value in
+                            states["clearance_rate_2025"].nsmallest(3).items()),
+        top_clear_state=states["clearance_rate_2025"].idxmax(),
+        top_clear=fmt(states["clearance_rate_2025"].max(), 1)))
     st.warning(T["states_warning"])
+
+    # Offence groups: stacked bars per state, one colour per group (file is optional)
+    offences_file = DATA_CLEAN / "cybercrime_states_offences.csv"
+    if offences_file.exists():
+        offences = pd.read_csv(offences_file)
+        year = st.radio(T["groups_year"], [2025, 2016], horizontal=True, key="groups_year")
+        wide = (offences[(offences["year"] == year) & (offences["state"] != "Germany")]
+                .pivot(index="state", columns="group", values="rate"))
+        wide = wide.rename(index=STATE_NAMES_DE)
+        if LANG == "en":
+            wide = wide.rename(index=STATE_NAMES_EN)
+        wide = wide.loc[wide.sum(axis=1).sort_values().index]        # smallest total at the bottom
+        fig = go.Figure()
+        for group, color in zip(T["groups"], GROUP_COLORS):
+            fig.add_trace(go.Bar(
+                x=wide[group], y=wide.index, orientation="h", name=T["groups"][group],
+                marker=dict(color=color, line=dict(color="rgba(255,255,255,0.9)", width=1)),
+                hovertemplate="%{y}, " + T["groups"][group] + ": %{x:,.0f}<extra></extra>"))
+        base_layout(fig, T["groups_title"].format(year=year), x_title=T["groups_axis"], height=600)
+        # Two legend rows need more room above the plot than the other charts
+        fig.update_layout(barmode="stack", legend=dict(traceorder="normal"), margin=dict(t=120),
+                          title=dict(y=0.97, yanchor="top"))
+        show(fig)
+        st.markdown(T["groups_note"])
 
     with st.expander(T["bremen_h"]):
         st.markdown(T["bremen"])
