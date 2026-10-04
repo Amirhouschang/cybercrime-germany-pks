@@ -1,0 +1,205 @@
+state,year,group,rate
+Baden-Württemberg,2016,Goods credit fraud,8.952520207970537
+Baden-Württemberg,2016,Payment cards with PIN,17.050230991566064
+Baden-Württemberg,2016,Payment card data,5.303495030799795
+Baden-Württemberg,2016,Other non-cash means of payment,2.0497043186626587
+Baden-Württemberg,2016,Other computer fraud,20.074234224032498
+Baden-Württemberg,2016,Other cybercrime offences,10.45992607461034
+Bavaria,2016,Goods credit fraud,6.898423593418438
+Bavaria,2016,Payment cards with PIN,12.940383761017431
+Bavaria,2016,Payment card data,30.933901734369588
+Bavaria,2016,Other non-cash means of payment,2.3669534677191932
+Bavaria,2016,Other computer fraud,26.791733165860997
+Bavaria,2016,Other cybercrime offences,37.11601046255721
+Berlin,2016,Goods credit fraud,262.27041750484585
+Berlin,2016,Payment cards with PIN,204.60047084812604
+Berlin,2016,Payment card data,26.05090693803549
+Berlin,2016,Other non-cash means of payment,2.926110593912383
+Berlin,2016,Other computer fraud,105.36839022156339
+Berlin,2016,Other cybercrime offences,34.68719451618466
+Brandenburg,2016,Goods credit fraud,21.731903964301726
+Brandenburg,2016,Payment cards with PIN,20.122133300279376
+Brandenburg,2016,Payment card data,5.432975991075431
+Brandenburg,2016,Other non-cash means of payment,1.6902591972234675
+Brandenburg,2016,Other computer fraud,16.902591972234674
+Brandenburg,2016,Other cybercrime offences,17.828210104047525
+Bremen,2016,Goods credit fraud,26.061484253651212
+Bremen,2016,Payment cards with PIN,80.26937150124574
+Bremen,2016,Payment card data,1.4892276716372121
+Bremen,2016,Other non-cash means of payment,10.573516468624206
+Bremen,2016,Other computer fraud,111.69207537279092
+Bremen,2016,Other cybercrime offences,46.910671656572184
+Germany,2016,Goods credit fraud,29.896921819354738
+Germany,2016,Payment cards with PIN,29.9711530238069
+Germany,2016,Payment card data,12.147145620351637
+Germany,2016,Other non-cash means of payment,2.31942091288221
+Germany,2016,Other computer fraud,27.958392168661476
+Germany,2016,Other cybercrime offences,28.25410008147909
+Hamburg,2016,Goods credit fraud,17.343549989705764
+Hamburg,2016,Payment cards with PIN,123.25109879781225
+Hamburg,2016,Payment card data,3.3008691915891615
+Hamburg,2016,Other non-cash means of payment,1.3427264508159302
+Hamburg,2016,Other computer fraud,34.5752061085102
+Hamburg,2016,Other cybercrime offences,23.217978212025457
+Hesse,2016,Goods credit fraud,43.732590348843914
+Hesse,2016,Payment cards with PIN,23.558281731791148
+Hesse,2016,Payment card data,9.115678773194787
+Hesse,2016,Other non-cash means of payment,3.3677818558161916
+Hesse,2016,Other computer fraud,19.51046700124284
+Hesse,2016,Other cybercrime offences,15.721712413449625
+Lower Saxony,2016,Goods credit fraud,23.13728750501949
+Lower Saxony,2016,Payment cards with PIN,25.546895963830135
+Lower Saxony,2016,Payment card data,8.162390957332395
+Lower Saxony,2016,Other non-cash means of payment,0.3532410306109846
+Lower Saxony,2016,Other computer fraud,15.744457364375315
+Lower Saxony,2016,Other cybercrime offences,30.93382168064765
+Mecklenburg-Western Pomerania,2016,Goods credit fraud,36.3441956582951
+Mecklenburg-Western Pomerania,2016,Payment cards with PIN,10.915662859829245
+Mecklenburg-Western Pomerania,2016,Payment card data,8.993017697018411
+Mecklenburg-Western Pomerania,2016,Other non-cash means of payment,3.907311137325241
+Mecklenburg-Western Pomerania,2016,Other computer fraud,24.932366304837252
+Mecklenburg-Western Pomerania,2016,Other cybercrime offences,63.075165502536024
+North Rhine-Westphalia,2016,Goods credit fraud,22.73653892784289
+North Rhine-Westphalia,2016,Payment cards with PIN,21.421155705774186
+North Rhine-Westphalia,2016,Payment card data,10.601429032332454
+North Rhine-Westphalia,2016,Other non-cash means of payment,2.418066178441194
+North Rhine-Westphalia,2016,Other computer fraud,31.25574430651765
+North Rhine-Westphalia,2016,Other cybercrime offences,38.38680058275395
+Rhineland-Palatinate,2016,Goods credit fraud,10.782660790568897
+Rhineland-Palatinate,2016,Payment cards with PIN,18.777127829800758
+Rhineland-Palatinate,2016,Payment card data,3.750490709763095
+Rhineland-Palatinate,2016,Other non-cash means of payment,3.4050507759691255
+Rhineland-Palatinate,2016,Other computer fraud,12.164420525744776
+Rhineland-Palatinate,2016,Other cybercrime offences,10.215152327907376
+Saarland,2016,Goods credit fraud,37.86672719986099
+Saarland,2016,Payment cards with PIN,29.42957843384422
+Saarland,2016,Payment card data,20.590660678969506
+Saarland,2016,Other non-cash means of payment,5.323439102367725
+Saarland,2016,Other computer fraud,37.26407371657408
+Saarland,2016,Other cybercrime offences,50.120681360028215
+Saxony,2016,Goods credit fraud,18.18915793991017
+Saxony,2016,Payment cards with PIN,22.032627383471272
+Saxony,2016,Payment card data,7.809342372585929
+Saxony,2016,Other non-cash means of payment,1.4688418255647515
+Saxony,2016,Other computer fraud,13.856074554494157
+Saxony,2016,Other cybercrime offences,11.163197874292111
+Saxony-Anhalt,2016,Goods credit fraud,41.1495143555692
+Saxony-Anhalt,2016,Payment cards with PIN,12.46954980471794
+Saxony-Anhalt,2016,Payment card data,6.858252392594867
+Saxony-Anhalt,2016,Other non-cash means of payment,2.226705322271061
+Saxony-Anhalt,2016,Other computer fraud,29.21437382819632
+Saxony-Anhalt,2016,Other cybercrime offences,37.319581201262984
+Schleswig-Holstein,2016,Goods credit fraud,20.253862401065653
+Schleswig-Holstein,2016,Payment cards with PIN,24.346611798172184
+Schleswig-Holstein,2016,Payment card data,5.317076139830707
+Schleswig-Holstein,2016,Other non-cash means of payment,2.098845844670016
+Schleswig-Holstein,2016,Other computer fraud,10.564190751505748
+Schleswig-Holstein,2016,Other cybercrime offences,10.98395992043975
+Thuringia,2016,Goods credit fraud,9.582100636011928
+Thuringia,2016,Payment cards with PIN,11.74728683741847
+Thuringia,2016,Payment card data,3.685423321543049
+Thuringia,2016,Other non-cash means of payment,2.1651862014065415
+Thuringia,2016,Other computer fraud,47.2655540987896
+Thuringia,2016,Other cybercrime offences,50.67457067121692
+Baden-Württemberg,2025,Goods credit fraud,7.949565254815578
+Baden-Württemberg,2025,Payment cards with PIN,13.747234769513295
+Baden-Württemberg,2025,Payment card data,18.646799037302312
+Baden-Württemberg,2025,Other non-cash means of payment,23.475226255831238
+Baden-Württemberg,2025,Other computer fraud,36.475522008113536
+Baden-Württemberg,2025,Other cybercrime offences,20.745341990475104
+Bavaria,2025,Goods credit fraud,12.831226798122838
+Bavaria,2025,Payment cards with PIN,9.691350122817484
+Bavaria,2025,Payment card data,20.3110772433815
+Bavaria,2025,Other non-cash means of payment,13.329380309108782
+Bavaria,2025,Other computer fraud,19.64687256206691
+Bavaria,2025,Other cybercrime offences,28.03245666366366
+Berlin,2025,Goods credit fraud,104.36155880241989
+Berlin,2025,Payment cards with PIN,134.21015856390244
+Berlin,2025,Payment card data,129.9499493252181
+Berlin,2025,Other non-cash means of payment,10.636955551364691
+Berlin,2025,Other computer fraud,87.13077621283679
+Berlin,2025,Other cybercrime offences,31.395299930941192
+Brandenburg,2025,Goods credit fraud,24.327788396740083
+Brandenburg,2025,Payment cards with PIN,22.645963796965447
+Brandenburg,2025,Payment card data,3.4809857995335483
+Brandenburg,2025,Other non-cash means of payment,7.665991198972759
+Brandenburg,2025,Other computer fraud,10.912303798537753
+Brandenburg,2025,Other cybercrime offences,8.800244998820768
+Bremen,2025,Goods credit fraud,111.50818365085738
+Bremen,2025,Payment cards with PIN,60.57760104187799
+Bremen,2025,Payment card data,46.8164129831844
+Bremen,2025,Other non-cash means of payment,256.63906389872903
+Bremen,2025,Other computer fraud,40.148620831033895
+Bremen,2025,Other cybercrime offences,47.383884655707845
+Germany,2025,Goods credit fraud,23.976651988809376
+Germany,2025,Payment cards with PIN,26.837482115324832
+Germany,2025,Payment card data,31.493061380181228
+Germany,2025,Other non-cash means of payment,15.10939474597958
+Germany,2025,Other computer fraud,26.68552668827863
+Germany,2025,Other cybercrime offences,26.69749168253424
+Hamburg,2025,Goods credit fraud,62.27970567470128
+Hamburg,2025,Payment cards with PIN,79.1918671294693
+Hamburg,2025,Payment card data,145.33720970811757
+Hamburg,2025,Other non-cash means of payment,10.684190887297893
+Hamburg,2025,Other computer fraud,20.40197254860904
+Hamburg,2025,Other cybercrime offences,28.61645096949637
+Hesse,2025,Goods credit fraud,51.56992118670365
+Hesse,2025,Payment cards with PIN,39.46953832103684
+Hesse,2025,Payment card data,38.4027940420899
+Hesse,2025,Other non-cash means of payment,30.04397693093849
+Hesse,2025,Other computer fraud,32.559582842485014
+Hesse,2025,Other cybercrime offences,18.230182080511167
+Lower Saxony,2025,Goods credit fraud,12.742849668479776
+Lower Saxony,2025,Payment cards with PIN,41.014485746685395
+Lower Saxony,2025,Payment card data,46.87369799621188
+Lower Saxony,2025,Other non-cash means of payment,8.382796203480323
+Lower Saxony,2025,Other computer fraud,22.862171464037242
+Lower Saxony,2025,Other cybercrime offences,35.4301192743222
+Mecklenburg-Western Pomerania,2025,Goods credit fraud,3.6222743180115367
+Mecklenburg-Western Pomerania,2025,Payment cards with PIN,7.371645980514707
+Mecklenburg-Western Pomerania,2025,Payment card data,3.6858229902573534
+Mecklenburg-Western Pomerania,2025,Other non-cash means of payment,3.495176973519904
+Mecklenburg-Western Pomerania,2025,Other computer fraud,8.706168097676851
+Mecklenburg-Western Pomerania,2025,Other cybercrime offences,11.947150382213488
+North Rhine-Westphalia,2025,Goods credit fraud,18.204044325378522
+North Rhine-Westphalia,2025,Payment cards with PIN,17.483201875698594
+North Rhine-Westphalia,2025,Payment card data,18.28167351226713
+North Rhine-Westphalia,2025,Other non-cash means of payment,10.507664939565123
+North Rhine-Westphalia,2025,Other computer fraud,21.91361047026985
+North Rhine-Westphalia,2025,Other cybercrime offences,36.019942716314006
+Rhineland-Palatinate,2025,Goods credit fraud,11.696135843716378
+Rhineland-Palatinate,2025,Payment cards with PIN,20.70433984757247
+Rhineland-Palatinate,2025,Payment card data,29.9789154751985
+Rhineland-Palatinate,2025,Other non-cash means of payment,1.017055290757946
+Rhineland-Palatinate,2025,Other computer fraud,11.50241102642915
+Rhineland-Palatinate,2025,Other cybercrime offences,10.848589768084755
+Saarland,2025,Goods credit fraud,14.622468608622714
+Saarland,2025,Payment cards with PIN,23.020508012223594
+Saarland,2025,Payment card data,10.275248211464609
+Saarland,2025,Other non-cash means of payment,8.200438476457332
+Saarland,2025,Other computer fraud,15.709273707912239
+Saarland,2025,Other cybercrime offences,11.658454701469461
+Saxony,2025,Goods credit fraud,11.156677853029693
+Saxony,2025,Payment cards with PIN,16.376320928393916
+Saxony,2025,Payment card data,28.967782186026103
+Saxony,2025,Other non-cash means of payment,13.012001221050152
+Saxony,2025,Other computer fraud,20.952785236177718
+Saxony,2025,Other cybercrime offences,18.62744661492541
+Saxony-Anhalt,2025,Goods credit fraud,32.26264131294434
+Saxony-Anhalt,2025,Payment cards with PIN,18.449173697097347
+Saxony-Anhalt,2025,Payment card data,11.238075348485692
+Saxony-Anhalt,2025,Other non-cash means of payment,6.274592069571177
+Saxony-Anhalt,2025,Other computer fraud,28.329314940974353
+Saxony-Anhalt,2025,Other cybercrime offences,30.811056580431604
+Schleswig-Holstein,2025,Goods credit fraud,40.411999660755455
+Schleswig-Holstein,2025,Payment cards with PIN,26.86249141329481
+Schleswig-Holstein,2025,Payment card data,37.573698681237516
+Schleswig-Holstein,2025,Other non-cash means of payment,7.568802612047844
+Schleswig-Holstein,2025,Other computer fraud,13.1778259763333
+Schleswig-Holstein,2025,Other cybercrime offences,15.745812576849533
+Thuringia,2025,Goods credit fraud,22.13993677976762
+Thuringia,2025,Payment cards with PIN,9.665391755468445
+Thuringia,2025,Payment card data,11.141387540786287
+Thuringia,2025,Other non-cash means of payment,5.189791632246604
+Thuringia,2025,Other computer fraud,47.85083110465905
+Thuringia,2025,Other cybercrime offences,43.280005446900574
